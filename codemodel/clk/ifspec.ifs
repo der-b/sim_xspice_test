@@ -1,0 +1,31 @@
+NAME_TABLE:
+C_Function_Name:       cm_clk
+Spice_Model_Name:      clk
+Description:           "digital clk"
+
+
+PORT_TABLE:
+Port_Name:           out
+Description:         "output"
+Direction:           out
+Default_Type:        d
+Allowed_Types:       [d]
+Vector:              no
+Vector_Bounds:       -
+Null_Allowed:        no
+
+
+PARAMETER_TABLE:
+Parameter_Name:      freq
+Description:         "Clock Frequency"
+Data_Type:           real
+Default_Value:       100
+Limits:              -
+Vector:              no
+Vector_Bounds:       -
+Null_Allowed:        no
+
+STATIC_VAR_TABLE:
+Static_Var_Name:     last_update
+Data_Type:           real
+Description:         "timestamp of the last output change"
