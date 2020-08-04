@@ -57,5 +57,5 @@ CMPP_IDIR=$CM_DIR/clk CMPP_ODIR=$CM_DIR/clk $CMPP -ifs
 
 $CC $CFLAGS -I$CM_DIR/clk -o $CM_DIR/clk/ifspec.o -c $CM_DIR/clk/ifspec.c
 
-$CC $CFLAGS --shared $CM_DIR/dlmain.o $CM_DIR/clk/cfunc.o $CM_DIR/clk/ifspec.o -lm -o $CM_DIR/clk.cm
+$CC $CFLAGS --shared $CM_DIR/dlmain.o $CM_DIR/clk/cfunc.o $CM_DIR/clk/ifspec.o -lm -lngspice -o $CM_DIR/clk.cm
 
